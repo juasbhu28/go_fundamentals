@@ -14,7 +14,7 @@ import "fmt"
 //Cuando una función empieza por mayuscula son de tipo "publico" es decir que permiten 
 //exportarse a otras librerias
 
-/*Varaible parameter ("...") Es decir que recibe un número de variables no finitas
+/*Varaible parameter ("...TipoData") Es decir que recibe un número de variables no finitas
 de un tipo especifico, en el ejemplo de tipo interface provienen todas las clases entonces recibe cualquier tipo
 Ejemplo 
 	func Println(a ...interface{})
