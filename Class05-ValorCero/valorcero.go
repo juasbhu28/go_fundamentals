@@ -20,6 +20,7 @@ var z int
 		channels
 		maps
 
+	Usar el operador de declaración corta siempre que sea posible
 */
 
 func main() {
