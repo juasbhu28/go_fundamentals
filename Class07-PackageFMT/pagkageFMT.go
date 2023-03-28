@@ -57,8 +57,7 @@ func main() {
 	//resultado es: El tipo de b es: string
 
 	//The difference between %v and %s is that %v prints the value in the default format, and 
-	//%s prints the value as a string.
-	alias gplff="git pull --force-with-lease"
+	//%s prints the value as a string.	
 
 }
 
