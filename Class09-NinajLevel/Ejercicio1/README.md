@@ -2,21 +2,20 @@
 # ==========
 
 Usando el operador de declaración corta, asigna los siguientes valores a las variables con los identificadores "x", "y", y "z".
-    // add list in markdown file is with 4 spaces and *
-    a. 43
+
+    a. 42
     b. "James Bond"
     c. true
 Luego imprime los valores de cada variable.
+
     a. ¿Cuáles valores tienen las variables al imprimirse?
     b. ¿Qué tipo de variables son?
 
 # Solución
-//how add code in markdown file 
-
+```go
 package main
 
 import "fmt"
-
 
 func main() {
     x := 42
@@ -26,9 +25,17 @@ func main() {
     fmt.Println(x)
     fmt.Println(y)
     fmt.Println(z)
+    fmt.Printf("%T\n", x)
+    fmt.Printf("%T\n", y)
+    fmt.Printf("%T\n", z)
+    //Result are:
+    // 42 James Bond true
+    // 42
+    // James Bond
+    // true
+    // int
+    // string
 }
 
-
-[Image: image] 
-image.png1920×1080 1.03 MB
+```
 
