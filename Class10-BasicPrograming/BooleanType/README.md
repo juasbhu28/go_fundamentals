@@ -51,7 +51,6 @@ output:
     - || or
     - ! not
 
-    Example:
 
     ```go
 
