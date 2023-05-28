@@ -10,6 +10,15 @@ package main
 import "fmt"
 
 func main() {
+    //String interpreted literal
+    s1 := "Hello World"
+    fmt.Println(s1)
+    //String raw literal
+    s2 := `Hello 
+    World`
+    fmt.Println(s2)
+
+    //Other example
     fmt.Println("Hello World")
     fmt.Println(`Hello World`)
 }
@@ -192,3 +201,5 @@ func main() {
     //print index: 1, value: 101, unicode: U+0065 'e'
     //print index: 2, value: 108, unicode: U+006C 'l'
     //print index: 3, value: 108, unicode: U+006C 'l'
+
+>
