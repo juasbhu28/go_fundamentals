@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/go_fundamentals/PlatziClass/HelloWorld/src/acces/private"
-	"github.com/go_fundamentals/PlatziClass/HelloWorld/src/acces/public"
+	"github.com/go_fundamentals/PlatziClass/HelloWorld/src/access/private"
+	"github.com/go_fundamentals/PlatziClass/HelloWorld/src/access/public"
 )
 
 func mainTwo() {
