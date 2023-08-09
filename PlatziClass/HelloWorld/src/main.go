@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
 
-func main() {
+	"github.com/go_fundamentals/PlatziClass/HelloWorld/src/acces/private"
+	"github.com/go_fundamentals/PlatziClass/HelloWorld/src/acces/public"
+)
+
+func mainTwo() {
 	fmt.Println("Hello World")
 
 	//Variables
@@ -87,5 +92,26 @@ func main() {
 	radioCirculo := 10
 	areaCirculo := piCirculo * float64(radioCirculo*radioCirculo)
 	fmt.Println("El area del circulo es: ", areaCirculo)
+
+}
+
+func usingPackagePublic() {
+	var myCar public.CarPublic
+	myCar.PublicBrand = "Ferrari"
+	myCar.PublicYear = 2020
+
+	//En un mismo archivo puedo crear diferentes structs, publicos y privados
+
+}
+
+func usingPackagePrivate() {
+	// var myCar privat
+	var myCar public.CarPublic
+	myCar.PublicBrand = "Ferrari"
+	myCar.PublicYear = 2020
+
+	//Para acceder a un paquete privado desde otro paquete, debe existir una función
+	//Que permita acceder a ese paquete privado
+	private.PrintCarPrivate(myCar)
 
 }

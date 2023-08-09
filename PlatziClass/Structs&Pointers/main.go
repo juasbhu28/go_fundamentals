@@ -5,6 +5,10 @@ import (
 )
 
 //Structs & Pointers
+//Structs is a type of data that allows us to group values of different types of data
+//Structs are like classes in other languages
+// & is used to get the memory address of a variable
+// * is used to get the value of a memory address
 
 type User struct {
 	edad             int
@@ -12,6 +16,18 @@ type User struct {
 }
 
 func main() {
+
+	a := 50
+	b := &a //b is a pointer to a
+
+	fmt.Println("Print the value of a")
+	fmt.Println(a)
+	fmt.Println("Print the memory address of a")
+	fmt.Println(&a)
+	fmt.Println("Print the value of b")
+	fmt.Println(b) //Prints the memory address of a
+	fmt.Println("Print the value of *b")
+	fmt.Println(*b) //Prints the value of a
 
 	var objeto User
 	objeto.edad = 23
